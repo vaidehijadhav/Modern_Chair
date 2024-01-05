@@ -17,5 +17,23 @@ p{
 
 .section-main{
     position: relative;
+    /* display: block; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.section{
+    position: relative;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    width: 860px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 100px 0;
+}
+
+.sectionFluid{
+    position: relative;
+    width: 100%;
     display: block;
 }
