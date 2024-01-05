@@ -69,3 +69,28 @@ p{
     border-color: #434343;
     transform: scale(1.1);
 }
+
+label.color1{
+    margin-left: 500px;
+    background-image: url("./Images/color1.jpg");
+}
+
+label.color2{
+    background-image: url("./Images/color2.jpg");
+}
+
+label.color3{
+    background-image: url("./Images/color3.jpg");
+}
+
+label.color4{
+    background-image: url("./Images/color4.jpg");
+}
+
+label.color5{
+    background-image: url("./Images/color5.jpg");
+}
+
+label.color6{
+    background-image: url("./Images/color6.jpg");
+}
