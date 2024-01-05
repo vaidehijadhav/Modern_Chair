@@ -56,4 +56,11 @@ p{
     border: none;
     cursor: pointer;
     color: #ffeba7;
+    margin-right: 10px;
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112,0.25);
+    z-index: 10;
+    background-color: green;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid transparent;
 }
