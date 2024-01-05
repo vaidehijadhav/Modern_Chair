@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    background-color: #171723;
 }
 
 p{
@@ -36,4 +37,23 @@ p{
     position: relative;
     width: 100%;
     display: block;
+}
+
+[type="radio"]:checked,   /* atribute selector */
+[type="radio"]:not(:checked) {
+    position: absolute;
+    visibility: hidden;
+}
+
+.colorBtn:checked + label,          /* + selector = adjacent sibling selector*/ 
+.colorBtn:not(:checked) + label{    /* here we are selecting the label element which is next to the checked radio button */
+    position: relative;
+    height: 40px;
+    transition: all 200ms linear;
+    border-radius: 4px;
+    width: 40px;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+    color: #ffeba7;
 }
