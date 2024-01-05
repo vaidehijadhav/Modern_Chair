@@ -94,3 +94,90 @@ label.color5{
 label.color6{
     background-image: url("./Images/color6.jpg");
 }
+
+.imgwrap{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 500px;
+    height: 410px;
+    display: inline-block;
+    z-index: 9;
+    transition: all 550ms linear;
+    transition-delay: 100ms;
+    background-position: center top;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./Images/chair1.png");
+    opacity: 0;
+}
+
+.forColor1:checked ~ .imgwrap.chair1{  /* ~ selector = general sibling selector. selects all elements that are next siblings of a specified element */
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.imgwrap.chair2{
+    background-image: url("./Images/chair2.png");
+}
+
+.forColor2:checked ~ .imgwrap.chair2{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.imgwrap.chair3{
+    background-image: url("./Images/chair3.png");
+}
+
+.forColor3:checked ~ .imgwrap.chair3{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.imgwrap.chair4{
+    background-image: url("./Images/chair4.png");
+}
+
+.forColor4:checked ~ .imgwrap.chair4{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.imgwrap.chair5{
+    background-image: url("./Images/chair5.png");
+}
+
+.forColor5:checked ~ .imgwrap.chair5{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.imgwrap.chair6{
+    background-image: url("./Images/chair6.png");
+}
+
+.forColor6:checked ~ .imgwrap.chair6{
+    opacity: 1;
+    animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0) rotate(-1deg);
+    }
+    20%,
+    80%{
+        transform: translate3d(2px, 0, 0) rotate(2deg);
+    }
+    30%,
+    50%,
+    70%{
+        transform: translate3d(-3px, 0, 0) rotate(-3deg);
+    }
+    40%,
+    60%{
+        transform: translate3d(3px, 0, 0) rotate(3deg);
+    }
+}
