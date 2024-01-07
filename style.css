@@ -18,7 +18,7 @@ p{
 
 .section-main{
     position: relative;
-    /* display: block; */
+    display: block;
     width: 100%;
     overflow: hidden;
 }
@@ -190,5 +190,45 @@ label.color6{
     height: 100%;
     display: block;
     z-index: 1;
-    
+    background-image: linear-gradient(196deg, #f1a9a9, #e66767);
+    transition: all 250ms linear;
+    transition-delay: 300ms;
+
 }
+
+.backColor.chair2 {
+    background-image: linear-gradient(196deg, #4c4c4c, #262626);
+    opacity: 0;
+}
+
+.forColor2:checked ~ .backColor.chair2{
+    opacity: 1;
+}
+
+.backColor.chair3{
+    background-image: linear-gradient(196deg, #8a9fb2, #5f7991);
+    opacity: 0;
+}
+
+.forColor3:checked ~ .backColor.chair3{
+    opacity: 1;
+}
+
+.backColor.chair4{
+    background-image: linear-gradient(196deg, #97afc3, #6789a7);
+    opacity: 0;
+}
+
+.forColor4:checked ~ .backColor.chair4{
+    opacity: 1;
+}
+
+
+.infowrap{
+    position: relative;
+    margin-left: 500px;
+    z-index: 10;
+    display: block;
+    text-align: left;
+}
+
