@@ -232,3 +232,30 @@ label.color6{
     text-align: left;
 }
 
+.title {
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2{
+    font-family: "poppins", sans-serif;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h4{
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    
+}
