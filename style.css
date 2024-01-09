@@ -335,5 +335,78 @@ h5{
 }
 
 .sectionInline{
-    
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.sectionInline p span{
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.btn{
+    position: relative;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 2;
+    height: 48px;
+    border-radius: 4px;
+    width: 210px;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    background-color: transparent;
+    color: #fff;
+    box-shadow: 0 6px 15px 0 rgba(16, 39, 112,0.15);
+    transition: all 250ms linear;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.btn::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    background-color: #944852;
+    transition: background-color 250ms 300ms ease;
+}
+
+.icon {
+    padding-right: 7px;
+    font-size: 20px; 
+}
+
+.forColor2:checked ~ .infoWrap .btn:before{
+    background-color: #1a1a1a;
+}
+
+.forColor3:checked ~ .infoWrap .btn:before{
+    background-color: #40566e;
+}
+
+.forColor4:checked ~ .infoWrap .btn:before{
+    background-color: #5e89b2;
+}
+
+.forColor5:checked ~ .infoWrap .btn:before{
+    background-color: #8c7f76;
+}
+
+.forColor6:checked ~ .infoWrap .btn:before{
+    background-color: #5d6160;
+}
+
+.btn:hover{
+    box-shadow: 0 12px 35px 0 rgba(16, 39, 112,0.25);
+    background-color: #333;
 }
