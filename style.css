@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #171723;
 }
 
 p{
@@ -47,7 +46,7 @@ p{
 
 .colorBtn:checked + label,          /* + selector = adjacent sibling selector*/ 
 .colorBtn:not(:checked) + label{    /* here we are selecting the label element which is next to the checked radio button */
-    position: relative;
+    /* position: relative; */
     height: 40px;
     transition: all 200ms linear;
     border-radius: 4px;
@@ -59,7 +58,7 @@ p{
     margin-right: 10px;
     box-shadow: 0 12px 35px 0 rgba(16, 39, 112,0.25);
     z-index: 10;
-    background-color: green;
+    /* background-color: green; */
     background-position: center;
     background-size: cover;
     border: 3px solid transparent;
@@ -95,7 +94,7 @@ label.color6{
     background-image: url("./Images/color6.jpg");
 }
 
-.imgwrap{
+.imgWrap{
     position: absolute;
     top: 100px;
     left: 0;
@@ -112,52 +111,52 @@ label.color6{
     opacity: 0;
 }
 
-.forColor1:checked ~ .imgwrap.chair1{  /* ~ selector = general sibling selector. selects all elements that are next siblings of a specified element */
+.forColor1:checked ~ .imgWrap.chair1{  /* ~ selector = general sibling selector. selects all elements that are next siblings of a specified element */
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.imgwrap.chair2{
+.imgWrap.chair2{
     background-image: url("./Images/chair2.png");
 }
 
-.forColor2:checked ~ .imgwrap.chair2{
+.forColor2:checked ~ .imgWrap.chair2{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.imgwrap.chair3{
+.imgWrap.chair3{
     background-image: url("./Images/chair3.png");
 }
 
-.forColor3:checked ~ .imgwrap.chair3{
+.forColor3:checked ~ .imgWrap.chair3{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.imgwrap.chair4{
+.imgWrap.chair4{
     background-image: url("./Images/chair4.png");
 }
 
-.forColor4:checked ~ .imgwrap.chair4{
+.forColor4:checked ~ .imgWrap.chair4{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.imgwrap.chair5{
+.imgWrap.chair5{
     background-image: url("./Images/chair5.png");
 }
 
-.forColor5:checked ~ .imgwrap.chair5{
+.forColor5:checked ~ .imgWrap.chair5{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 
-.imgwrap.chair6{
+.imgWrap.chair6{
     background-image: url("./Images/chair6.png");
 }
 
-.forColor6:checked ~ .imgwrap.chair6{
+.forColor6:checked ~ .imgWrap.chair6{
     opacity: 1;
     animation: shake 0.7s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
@@ -182,7 +181,7 @@ label.color6{
     }
 }
 
-.backColor{
+.backColor {
     position: fixed;
     top: 0;
     left: 0;
@@ -193,10 +192,9 @@ label.color6{
     background-image: linear-gradient(196deg, #f1a9a9, #e66767);
     transition: all 250ms linear;
     transition-delay: 300ms;
-
 }
 
-.backColor.chair2 {
+.backColor .chair2 {
     background-image: linear-gradient(196deg, #4c4c4c, #262626);
     opacity: 0;
 }
@@ -257,5 +255,65 @@ h2{
 h4{
     font-family: "poppins", sans-serif;
     font-weight: 500;
+    font-size: 26px;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+h4 span{
+    text-decoration: line-through;
+    font-size: 20px;
+    opacity: 0.6;
+    padding-left: 15px;
+}
+
+h5{
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.descBtn:checked + label,
+.descBtn:not(:checked) + label {
+    position: relative;
+    transition: all 200ms linear;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: #ffeba7;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #fff;
+    margin-right: 25px;
+    opacity: 0.5;
+}
+
+.descBtn:checked + label{
+    opacity: 1;
+}
+
+.descBtn:not(:checked) + label:hover {
+    opacity: 0.8;
+}
+
+.descSec{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    transition: all 250ms linear;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
+.descSec.accor2{
     
 }
