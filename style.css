@@ -315,5 +315,21 @@ h5{
 }
 
 .descSec.accor2{
-    
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+#desc1:checked ~ .descSec.accor1{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#desc2:checked ~ .descSec.accor2{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
 }
