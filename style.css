@@ -51,8 +51,8 @@ p{
     transition: all 200ms linear;
     border-radius: 4px;
     width: 40px;
-    overflow: hidden;
-    border: none;
+    /* overflow: hidden;
+    border: none; */
     cursor: pointer;
     color: #ffeba7;
     margin-right: 10px;
@@ -104,10 +104,10 @@ label.color6{
     z-index: 9;
     transition: all 550ms linear;
     transition-delay: 100ms;
-    background-position: center top;
+    /* background-position: center top; */
     background-size: 100%;
-    background-repeat: no-repeat;
-    background-image: url("./Images/chair1.png");
+    /* background-repeat: no-repeat; */
+    background-image: url(./Images/chair1.png);
     opacity: 0;
 }
 
@@ -192,9 +192,10 @@ label.color6{
     background-image: linear-gradient(196deg, #f1a9a9, #e66767);
     transition: all 250ms linear;
     transition-delay: 300ms;
+    opacity: 0;
 }
 
-.backColor .chair2 {
+.backColor.chair2 {
     background-image: linear-gradient(196deg, #4c4c4c, #262626);
     opacity: 0;
 }
@@ -222,7 +223,7 @@ label.color6{
 }
 
 
-.infowrap{
+.infoWrap{
     position: relative;
     margin-left: 500px;
     z-index: 10;
@@ -312,6 +313,7 @@ h5{
     overflow: hidden;
     pointer-events: none;
     transform: translateY(20px);
+    color: #fff;
 }
 
 .descSec.accor2{
@@ -347,25 +349,25 @@ h5{
 
 .btn{
     position: relative;
-    font-family: "poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
-    line-height: 2;
+    text-decoration: none;
     height: 48px;
+    width: 150px;
     border-radius: 4px;
-    width: 210px;
     letter-spacing: 1px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 25px;
     border: none;
     cursor: pointer;
-    overflow: hidden;
-    background-color: transparent;
+    font-family: "poppins", sans-serif;
+    line-height: 2;
     color: #fff;
-    box-shadow: 0 6px 15px 0 rgba(16, 39, 112,0.15);
     transition: all 250ms linear;
-    text-decoration: none;
+    overflow: hidden;
+    background-color: #944852;
+    box-shadow: 0 6px 15px 0 rgba(16, 39, 112,0.15);
     margin-top: 50px;
 }
 
@@ -381,10 +383,10 @@ h5{
     transition: background-color 250ms 300ms ease;
 }
 
-.icon {
+/* .icon {
     padding-right: 7px;
     font-size: 20px; 
-}
+} */
 
 .forColor2:checked ~ .infoWrap .btn:before{
     background-color: #1a1a1a;
